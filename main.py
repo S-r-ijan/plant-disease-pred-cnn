@@ -4,12 +4,13 @@ import tensorflow as tf
 import json
 from PIL import Image
 import requests
-import os
-from dotenv import load_dotenv
+#import os
+#from dotenv import load_dotenv
 
 # Load environment variables from .env file
-load_dotenv()
-API_KEY = os.getenv("API_KEY")
+#load_dotenv()
+#API_KEY = os.getenv("API_KEY")
+API_KEY = st.secrets["api"]["key"]
 
 # Load model and class indices
 model_path = "./trained_model/plant_disease_prediction_model.h5"
